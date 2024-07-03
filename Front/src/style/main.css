@@ -1,0 +1,151 @@
+
+body{
+    background-color: #05020B;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.bloco1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+}
+
+.bloco1 .imagem{
+    display: flex;
+    position: relative;
+    bottom: 90px;
+
+}
+
+
+.txt p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+main {
+    padding-left: 30px;
+}
+
+.bloco2{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.img-curso{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.button-orb1{
+        position: relative;
+        left: 15px;
+        padding: 10px 40px;
+        border-radius: 7px;
+        border: 1px solid rgba(213, 61, 255, 0.357);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        background: transparent;
+        color: #fff;
+        overflow: hidden;
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    
+    }
+    
+    .button-orb1:hover {
+        background: rgb(140, 21, 203);
+        box-shadow: 0 0 30px 5px rgba(165, 0, 236, 0.815);
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+    
+      .button-orb1o:hover::before {
+        -webkit-animation: sh02 0.5s 0s linear;
+        -moz-animation: sh02 0.5s 0s linear;
+        animation: sh02 0.5s 0s linear;
+      }
+    
+      .button-orb1::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+      }
+      
+      @keyframes sh02 {
+        from {
+          opacity: 0;
+          left: 0%;
+        }
+      
+        50% {
+          opacity: 1;
+        }
+      
+        to {
+          opacity: 0;
+          left: 100%;
+        }
+      }
+      
+      .button-orb1:active {
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: box-shadow 0.2s ease-in;
+        -moz-transition: box-shadow 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in;
+      }
+
+.txt p {
+    font-size: 20px;
+    margin-bottom: 45px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.t2{
+    margin-bottom: 20px;
+}
+
+.exp {
+    margin-bottom: 20px;
+}
+
+.bloco2 h4{
+    text-align: center;
+    position: relative;
+    left: 250px;
+
+}
+
+.img-curso{
+    position: relative;
+    left: 250px;
+}

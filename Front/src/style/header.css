@@ -1,0 +1,114 @@
+.cabecalho {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #323232;
+    width: 100%;
+    background-color: #000000; 
+    z-index: 999;
+    margin-bottom: 25px;
+    min-height: 10vh
+    
+}
+
+.cabecalho .logo {
+  height: 150px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.cabecalho .menu a{
+    color: #fefefe;
+}
+
+.cabecalho .menu .btn-planos {
+        position: relative;
+        left: 10px;
+        padding: 10px 40px;
+        border-radius: 7px;
+        border: 1px solid rgba(213, 61, 255, 0.357);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        background:#231747;
+        color: #fff;
+        overflow: hidden;
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+      }
+      
+      .cabecalho .menu .btn-planos:hover {
+        background: rgb(140, 21, 203);
+        box-shadow: 0 0 30px 5px rgba(165, 0, 236, 0.815);
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+      
+      .cabecalho .menu .btn-planos:hover::before {
+        -webkit-animation: sh02 0.5s 0s linear;
+        -moz-animation: sh02 0.5s 0s linear;
+        animation: sh02 0.5s 0s linear;
+      }
+      
+      .cabecalho .menu .btn-planos::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 10%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+      }
+      
+      @keyframes sh02 {
+        from {
+          opacity: 0;
+          left: 0%;
+        }
+      
+        50% {
+          opacity: 1;
+        }
+      
+        to {
+          opacity: 0;
+          left: 100%;
+        }
+      }
+      
+      .cabecalho .menu .btn-planos:active {
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: box-shadow 0.2s ease-in;
+        -moz-transition: box-shadow 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in;
+      }
+
+.cabecalho .menu .op:hover{
+    color: #7058B7;
+}
+
+a {
+    text-decoration: none;
+}
+

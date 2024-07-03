@@ -1,0 +1,239 @@
+body {
+    background-color: #05020B;
+    color: #f0f0f0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+.img{
+  width: 250px;
+  position: relative;
+  right: 480px;
+  top: 90px;
+  animation: mover 2s ease-in-out infinite alternate
+}
+
+.planetas {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    transform: scaleX(-1);
+    width: 200px;
+    animation: mover 2s ease-in-out infinite alternate
+}
+
+@keyframes mover {
+    from { 
+      transform: translateY(0); 
+    }
+    to { 
+      transform: translateY(35px); 
+    }
+  }
+
+a {
+    color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal{
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  color: #7058B7;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+
+.principal img {
+  height: 150px;
+  width: 158px;
+}
+
+.subtitulo {
+  color: #7058B7;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.aulas {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 40px;
+}
+
+.aula{
+  padding:  30px;
+  background-color: #7e65c4ab;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  justify-content: space-between;
+  width: 600px;
+  height: 130px;
+}
+
+
+.alinhar p{
+  font-size: small;
+}
+
+.aula img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.bloco-aula{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+
+
+.display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+}
+
+.display-projetos{
+  padding: 5px;
+  background-color: #7e65c4ab;
+  text-align: center;
+  width: 420px;
+  padding: 20px;
+  border-radius: 23px;
+}
+
+.projetos{
+  margin-bottom: 30px;
+  text-align: center;
+  color: #7058B7;
+}
+
+.display-projetos h3, p{
+  margin-bottom: 30px;
+}
+
+.display-projetos button{
+  border-radius: 25px;
+  background: #e3dbfc; 
+  border: 1px solid;
+  color: #000000;
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.display-projetos button:hover{
+  background: #12042e;
+  color: #fff;
+}
+
+
+
+.certificado{
+    position: relative;
+    left: 15px;
+    padding: 10px 40px;
+    border-radius: 7px;
+    border: 1px solid rgba(213, 61, 255, 0.357);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.certificado:hover {
+    background: rgb(140, 21, 203);
+    box-shadow: 0 0 30px 5px rgba(165, 0, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+  .certificado:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+
+  .certificado::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .certificado:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+
+.btn-certificado{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+ 
+}
+ #btn2{
+  margin-bottom: 180px;
+}

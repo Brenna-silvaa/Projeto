@@ -1,0 +1,144 @@
+.fim {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    background-color: #09070F;
+    /* position: relative; */
+    top: 280px;
+    width: 100%; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    min-height: 30vh;
+}
+
+a{
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.fim .logo_fim {
+    width: 150px;
+}
+
+.fim .redes {
+  position: relative;
+  top: -30px;
+  right: 25px;
+}
+
+.fim .redes h3{
+  color:#7058B7;
+  position: relative;
+  left: 47px;
+}
+
+.fim .op1 .op2{
+position: relative;
+right: 30px;
+}
+
+.fim .op2{
+  position: relative;
+  top: -15px;
+}
+
+.fim .fim_hs{
+  position: relative;
+  right: 25px;
+  color:#7058B7;
+}
+
+
+.redes_op {
+  display: flex;
+  height: 50px;
+  width: 200px;
+}
+
+.fim .redes svg{
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+
+.redes_op .social-link1,.redes_op .social-link2,.redes_op .social-link3,.redes_op .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.redes_op svg {
+  transform: scale(1);
+}
+
+.redes_op .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.redes_op .social-link2:hover {
+  background-color: #242c34;
+  animation: bounce_613 0.4s linear;
+}
+
+.redes_op .social-link3:hover {
+  background-color: #5865f2;
+  animation: bounce_613 0.4s linear;
+}
+
+.redes_op .social-link4:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.fim li{
+  padding: 5px;
+}
+
+.fim ul :hover{
+  color: #008080;
+  cursor: pointer;
+}
